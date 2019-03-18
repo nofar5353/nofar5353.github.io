@@ -1,0 +1,40 @@
+body{
+	background-image: url(background3.jpg);
+	background-size: cover;
+	
+}
+
+.the{
+	margin-top: 200px;
+	margin-bottom: 30px;
+	text-align: center;
+	border: 2px solid white;
+	border-radius: 30PX;
+	border-width: 70%;
+	background-color:rgb( 226, 226 , 226 ,0.1);
+	margin-left: 15%;
+	margin-right:15%;
+	font-family: 'Titillium Web', sans-serif;
+	color: white;
+	font-size: 65px ;
+	font-weight: 900;
+	text-shadow: 4PX 4PX #7F5757;
+
+}
+
+.btn {
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 300px;
+	font-family: 'Montserrat', sans-serif;
+	transition: 1s;
+	width: 20%;
+	margin-left: 40%;
+	margin-right: 40%
+
+}
+.btn:hover{
+	transform: scale(1.1);
+}
+
+
