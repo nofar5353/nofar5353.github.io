@@ -1,0 +1,30 @@
+.btnsContainer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 1%;
+  left: 1%;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.btnsContainer > button {
+  background-color: transparent;
+  border: none;
+  font-size: 2em;
+  flex: 1;
+  padding: 1em;
+  color: #00ffbb;
+}
+.btnsContainer > button:hover {
+  font-size: 2.2em;
+  cursor: pointer;
+  padding: 0.8em;
+}
+
+.btnsContainer > div {
+  background-color: #00ffbb;
+  width: 1%;
+  min-height: 10em;
+}

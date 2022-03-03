@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+.headerContant {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 60vh;
+}
+.textAerea,
+.imgAera {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  min-height: 100%;
+  max-height: 100%;
+  justify-content: center;
+}
+
+.imgAera {
+  flex: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .headerContant {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .textAerea,
+  .imgAera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    min-height: 50%;
+    max-height: 50%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .imgAera {
+    flex: 2;
+    justify-content: flex-end;
+  }
+}
+.myEmogi {
+  width: calc(8vw + 12vh + 6vmin);
+  height: calc(8vw + 12vh + 6vmin);
+  background: url("../images/coolCat.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.1s ease;
+}
+.myEmogi:hover {
+  background: url("../images/emojiMe.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  position: relative;
+  padding: calc(1vw + 1vh + 0.5vmin);
+  padding-top: 0;
+  font-size: calc(1vw + 1vh + 0.5vmin);
+  color: #00ffbb;
+}
+
+h1 {
+  position: relative;
+  padding: calc(1vw + 1vh + 0.5vmin);
+  padding-bottom: 0;
+  font-size: calc(2vw + 2vh + 1vmin);
+  color: white;
+}
+p::after,
+p::before,
+h1::after,
+h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::after {
+  background-color: #94629b;
+  animation: text-hide-left 3s forwards;
+}
+p::before {
+  background-color: #94629b;
+  animation: text-hide-right 2s forwards;
+}
+
+@keyframes text-hide-left {
+  100% {
+    background-color: #629b8d;
+    left: 100%;
+  }
+}
+
+@keyframes text-hide-right {
+  100% {
+    background-color: #629b8d;
+    right: 100%;
+  }
+}
+
+/* ----------- */
+.AnimatedBackground {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+.circle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: solid black 2px;
+  margin: 50px;
+  animation: move-shape 5s forwards infinite;
+}
+
+@keyframes move-shape {
+  from {
+    top: 1vh;
+  }
+  to {
+    top: 99vh;
+    background-color: blue;
+  }
+}
