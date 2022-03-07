@@ -8,10 +8,10 @@ import SocialBtnsBar from "./SocialBtnsBar";
 import AboutContent from "./AboutContent";
 import { motion, AnimatePresence } from "framer-motion";
 import SkillsSection from "./SkillsSection";
+import ProjectsSection from "./ProjectsSection";
 
 function Main() {
   const scrollRef = useRef(null);
-  // useScrollSnap({ ref: scrollRef, duration: 1, delay: 0 });
 
   const goToSection = (secId) => {};
   return (
@@ -22,9 +22,7 @@ function Main() {
         <Header />
         <AboutContent />
         <SkillsSection />
-        <div className="projectsContainer">
-          <h1>projectsContainer</h1>
-        </div>
+        <ProjectsSection />
         <div className="footer">
           <h1>footer</h1>
         </div>
