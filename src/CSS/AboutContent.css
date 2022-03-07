@@ -1,0 +1,133 @@
+.aboutContainer {
+  display: flex;
+  height: 100vh;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.aboutContantContainer {
+  display: flex;
+  width: 70%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  opacity: 0;
+  transition: 0.5 easeInOut;
+}
+
+.aboutContantContainer > div:nth-of-type(1) {
+  flex: 3;
+  align-items: center;
+  height: 80%;
+}
+.aboutContantContainer > div:nth-of-type(2) {
+  flex: 1;
+  align-items: center;
+  height: 80%;
+}
+
+.aboutBtns {
+  display: flex;
+  width: 50%;
+  margin-top: 1em;
+  flex-direction: row;
+}
+
+.aboutBtns > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(0.7vw + 0.7vh + 0.5vmin);
+}
+
+.aboutBtns h6 {
+  margin: 4%;
+  padding: 0;
+}
+
+.aboutBtns > div:hover {
+  cursor: pointer;
+  font-size: calc(0.8vw + 0.8vh + 0.8vmin);
+}
+
+.imgDiv {
+  width: 100%;
+  position: relative;
+}
+
+.meImg {
+  width: 80%;
+  margin-top: 1em;
+  margin-left: 1em;
+  opacity: 0.6;
+  position: relative;
+}
+
+.imgEffect {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  background-color: #881497;
+  opacity: 0;
+}
+.imgEffect2 {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  background-color: #881497;
+  opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .aboutContainer {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutContantContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    text-align: center;
+  }
+
+  .aboutContantContainer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .aboutContantContainer > div:nth-of-type(1) {
+    flex: 5;
+    height: 100%;
+  }
+  .aboutContantContainer > div:nth-of-type(2) {
+    flex: 1;
+    height: 100%;
+  }
+
+  .meImg,
+  .imgEffect,
+  .imgEffect2 {
+    margin: 0;
+    width: 2px;
+    visibility: hidden;
+  }
+}

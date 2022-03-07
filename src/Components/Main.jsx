@@ -1,42 +1,35 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import "../CSS/Main.css";
 import Header from "./Header";
+import HeaderNavBtns from "./HeaderNavBtns";
 
 import SocialBtnsBar from "./SocialBtnsBar";
-import HeaderNavBtns from "./HeaderNavBtns";
-import BackgroundAnimation from "./BackgroundAnimation";
-import RandomShape from "./RandomShape";
 import AboutContent from "./AboutContent";
+import { motion, AnimatePresence } from "framer-motion";
+import SkillsSection from "./SkillsSection";
 
 function Main() {
+  const scrollRef = useRef(null);
+  // useScrollSnap({ ref: scrollRef, duration: 1, delay: 0 });
+
   const goToSection = (secId) => {};
   return (
-    <div className="container">
-      <SocialBtnsBar />
-      <div className="headerContainer">
-        <div>
-          <HeaderNavBtns />
-        </div>
-        <div>
-          <Header />
-          <BackgroundAnimation shapeCount={30} />
-        </div>
-      </div>
-      <div className="aboutContainer">
+    <AnimatePresence>
+      <div className="container">
+        <HeaderNavBtns />
+        <SocialBtnsBar />
+        <Header />
         <AboutContent />
-        <BackgroundAnimation shapeCount={20} />
+        <SkillsSection />
+        <div className="projectsContainer">
+          <h1>projectsContainer</h1>
+        </div>
+        <div className="footer">
+          <h1>footer</h1>
+        </div>
       </div>
-      <div className="skilsContainer">
-        <h1>skilsContainer</h1>
-      </div>
-      <div className="projectsContainer">
-        <h1>projectsContainer</h1>
-      </div>
-      <div className="footer">
-        <h1>footer</h1>
-      </div>
-    </div>
+    </AnimatePresence>
   );
 }
 

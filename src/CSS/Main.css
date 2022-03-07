@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
+h1 {
+  position: relative;
+  font-size: calc(1.2vw + 1vh + 0.5vmin);
+  color: #e31f71;
+  text-shadow: 0 0 1px #000000;
+}
+
+p {
+  position: relative;
+  width: 70%;
+  padding-bottom: 0;
+  margin-bottom: 10%;
+  font-size: calc(0.8vw + 0.5vh + 0.2vmin);
+  color: white;
+}
+
 .container {
   width: 100%;
   display: flex;
@@ -11,9 +27,6 @@
   background-color: #212121;
 }
 
-.headerContainer,
-.aboutContainer,
-.skilsContainer,
 .projectsContainer,
 .footer > div {
   display: flex;
@@ -23,28 +36,32 @@
   justify-content: center;
   z-index: 1;
 }
-.headerContainer {
-  position: relative;
-  flex-direction: column;
+
+/* on scroll animations */
+.active {
+  color: white;
 }
 
-.headerContainer > div:nth-of-type(1) {
-  flex: 1;
-  align-items: center;
-}
-.headerContainer > div:nth-of-type(2) {
-  flex: 8;
-  align-items: flex-start;
-}
-
-.headerContainer > div {
-  width: 90%;
-  display: flex;
-  justify-content: center;
+@media screen and (max-width: 600px) {
+  .btnsContainer {
+    visibility: hidden;
+  }
+  p {
+    text-align: center;
+  }
 }
 
+/*--------headernavbtn style------------*/
 .navbtnContainer {
-  display: "flex";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #181818;
+  height: 5vh;
+  position: sticky;
+  padding-top: 3vh;
+  top: 0%;
+  z-index: 100;
 }
 .navBtn {
   background-color: transparent;

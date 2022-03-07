@@ -1,4 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+.headerContainer {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.headerContainer > div:nth-of-type(1) {
+  flex: 1;
+  align-items: center;
+}
+.headerContainer > div:nth-of-type(2) {
+  flex: 8;
+  align-items: flex-start;
+}
+
+.headerContainer > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 .headerContant {
   display: flex;
@@ -60,25 +85,25 @@
   background-size: cover;
 }
 
-p {
+.textAerea > p {
   position: relative;
   padding: calc(1vw + 1vh + 0.5vmin);
   padding-top: 0;
-  font-size: calc(1vw + 1vh + 0.5vmin);
+  font-size: calc(0.8vw + 1vh + 0.5vmin);
   color: #00ffbb;
 }
 
-h1 {
+.textAerea > h1 {
   position: relative;
   padding: calc(1vw + 1vh + 0.5vmin);
   padding-bottom: 0;
   font-size: calc(2vw + 2vh + 1vmin);
   color: white;
 }
-p::after,
-p::before,
-h1::after,
-h1::before {
+.textAerea > p::after,
+.textAerea > p::before,
+.textAerea > h1::after,
+.textAerea > h1::before {
   content: "";
   position: absolute;
   top: 0;
@@ -87,11 +112,11 @@ h1::before {
   left: 0;
 }
 
-h1::after {
+.textAerea > h1::after {
   background-color: #94629b;
   animation: text-hide-left 3s forwards;
 }
-p::before {
+.textAerea > p::before {
   background-color: #94629b;
   animation: text-hide-right 2s forwards;
 }

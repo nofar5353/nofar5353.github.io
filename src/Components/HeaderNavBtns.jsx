@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 
 function HeaderNavBtns() {
-  const handleClick = () => {};
   return (
     <div className="navbtnContainer">
       <Link

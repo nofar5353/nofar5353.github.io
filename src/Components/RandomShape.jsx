@@ -74,7 +74,7 @@ const getConfig = () => {
   const opacity = randomInt(3, 10) / 10;
   const left1 = randomInt(1, 99).toString() + "%";
   const left2 = randomInt(1, 99).toString() + "%";
-  const fallDuration = randomInt(10000, 30000);
+  const fallDuration = randomInt(20000, 50000);
   const fallDelay = randomInt(200, 10000);
   const top1 = randomInt(1, 99).toString() + "%";
   const top2 = randomInt(1, 99).toString() + "%";
