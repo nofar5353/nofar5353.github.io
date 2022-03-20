@@ -68,9 +68,9 @@ function RandomShape() {
   );
 }
 const getConfig = () => {
-  const intSize = randomInt(5, 12);
-  const size = intSize.toString() + "px";
-  const sizeX2 = (intSize * 2).toString() + "px";
+  const intSize = randomInt(0.2, 0.7);
+  const size = intSize.toString() + "vh";
+  const sizeX2 = (intSize * 2).toString() + "vh";
   const opacity = randomInt(3, 10) / 10;
   const left1 = randomInt(1, 99).toString() + "%";
   const left2 = randomInt(1, 99).toString() + "%";

@@ -7,6 +7,7 @@ import { useInView } from "react-intersection-observer";
 
 import { FaJava, FaPython, FaReact } from "react-icons/fa";
 import { SiJavascript, SiCsharp, SiHtml5 } from "react-icons/si";
+import BackgroundAnimation from "./BackgroundAnimation";
 
 function SkillsSection() {
   const { ref, inView } = useInView({
@@ -41,6 +42,7 @@ function SkillsSection() {
           <div>
             <div>
               <FaJava className="skilsIcon" />
+              {/* <div className="iconCover">Java</div> */}
             </div>
             <div>
               <SiCsharp className="skilsIcon" />
@@ -62,6 +64,7 @@ function SkillsSection() {
           </div>
         </div>
         <h4>And more</h4>
+        <BackgroundAnimation shapeCount={10} />
       </motion.div>
     </div>
   );

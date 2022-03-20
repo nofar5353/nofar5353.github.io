@@ -7,9 +7,10 @@ function HeaderNavBtns() {
     <div className="navbtnContainer">
       <Link
         activeClass="active"
-        to="aboutContainer"
+        to="aboutContantContainer"
         spy={true}
         smooth={true}
+        offset={-150}
         className="navBtn"
       >
         About
@@ -19,6 +20,7 @@ function HeaderNavBtns() {
         to="skilsContainer"
         spy={true}
         smooth={true}
+        offset={-270}
         className="navBtn"
       >
         Skils

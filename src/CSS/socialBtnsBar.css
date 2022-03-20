@@ -12,7 +12,7 @@
 .btnsContainer > button {
   background-color: transparent;
   border: none;
-  font-size: 2em;
+  font-size: calc(0.8vw + 0.5vh + 0.2vmin);
   flex: 1;
   padding: 1em;
   color: #00ffbb;

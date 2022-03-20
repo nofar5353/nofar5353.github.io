@@ -9,6 +9,7 @@ import AboutContent from "./AboutContent";
 import { motion, AnimatePresence } from "framer-motion";
 import SkillsSection from "./SkillsSection";
 import ProjectsSection from "./ProjectsSection";
+import Footer from "./Footer";
 
 function Main() {
   const scrollRef = useRef(null);
@@ -23,9 +24,7 @@ function Main() {
         <AboutContent />
         <SkillsSection />
         <ProjectsSection />
-        <div className="footer">
-          <h1>footer</h1>
-        </div>
+        {/* <Footer /> */}
       </div>
     </AnimatePresence>
   );

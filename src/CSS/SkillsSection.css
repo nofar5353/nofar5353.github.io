@@ -1,11 +1,11 @@
 .skilsContainer {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 70vh;
   background-color: transparent;
   background-image: linear-gradient(2turn, black, #2b0918, black);
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   z-index: 1;
 }
 .skilsContantContainer {
@@ -36,6 +36,8 @@
   flex: 1;
   text-align: center;
   margin-top: 4vh;
+  color: #00ffbb;
+  font-size: calc(0.5vw + 0.5vh + 0.5vmin);
 }
 .skilsIconContainer > div {
   flex: 1;
@@ -49,6 +51,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .skilsIcon {
@@ -56,6 +59,15 @@
   font-size: calc(2vw + 2vh + 1vmin);
 }
 
-.skilsIconContainer > div :hover {
-  color: #e31f71;
+.skilsIconContainer > div > div :hover {
+  color: #e31f8b;
+}
+
+@media screen and (max-width: 600px) {
+  .skilsContantContainer > h1 {
+    font-size: calc(4vw + 0.5vh + 1vmin);
+  }
+  .skilsIcon {
+    font-size: calc(3vw + 1vh + 3vmin);
+  }
 }
